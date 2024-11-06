@@ -1,5 +1,4 @@
-// @types/image-background-remover/index.d.ts
-
+// @types//index.d.ts
 declare module "image-background-remover" {
   export function removeBackgroundImage(
     image: string,
