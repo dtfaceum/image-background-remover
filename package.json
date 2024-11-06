@@ -2,9 +2,11 @@
   "name": "image-background-remover",
   "version": "0.0.1",
   "description": "Este módulo fornece uma função para remover o fundo de imagens com timeout.",
-  "main": "index.js",
+  "main": "dist/bundle.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --mode development",
+    "build": "webpack --mode production"
   },
   "keywords": [
     "background-removal",
@@ -16,5 +18,11 @@
   "dependencies": {
     "@imgly/background-removal": "^1.5.5"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "webpack": "^5.0.0",
+    "webpack-cli": "^4.0.0",
+    "babel-loader": "^8.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0"
+  }
 }

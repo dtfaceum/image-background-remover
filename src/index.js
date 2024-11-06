@@ -1,9 +1,6 @@
 import { removeBackground } from "@imgly/background-removal";
 
-async function removeBackgroundWithTimeout(
-  image: Blob,
-  timeout: number
-): Promise<Blob> {
+async function removeBackgroundWithTimeout(image, timeout) {
   const result = await Promise.race([
     removeBackground(image),
     new Promise((_, reject) =>
@@ -21,10 +18,7 @@ async function removeBackgroundWithTimeout(
   }
 }
 
-export async function removeBackgroundImage(
-  image: Blob,
-  timeout: number
-): Promise<Blob | null> {
+export async function removeBackgroundImage(image, timeout) {
   try {
     const result = await removeBackgroundWithTimeout(image, timeout);
     return result;
