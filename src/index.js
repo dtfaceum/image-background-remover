@@ -5,7 +5,7 @@ async function removeBackgroundWithTimeout(image, timeout) {
     removeBackground(image),
     new Promise((_, reject) =>
       setTimeout(
-        () => reject(new Error("Ocorreu um erro ao remover fundo da imagem.")),
+        () => reject(new Error("Error removing image background.")),
         timeout
       )
     ),
@@ -23,7 +23,7 @@ export async function removeBackgroundImage(image, timeout) {
     const result = await removeBackgroundWithTimeout(image, timeout);
     return result;
   } catch (e) {
-    console.error("Erro ao remover o fundo da imagem:", e);
+    console.error(e);
     return null;
   }
 }
