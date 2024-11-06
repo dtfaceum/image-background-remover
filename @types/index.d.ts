@@ -1,7 +1,7 @@
 // @types//index.d.ts
 declare module "image-background-remover" {
   export function removeBackgroundImage(
-    image: string,
+    image: Blob,
     timeout: number
   ): Promise<Blob | null>;
 }
