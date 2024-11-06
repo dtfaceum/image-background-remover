@@ -2,8 +2,8 @@
   "name": "image-background-remover",
   "version": "0.0.1",
   "description": "Este módulo fornece uma função para remover o fundo de imagens com timeout.",
-  "main": "dist/bundle.js",
-  "types": "@types/index.d.ts",
+  "main": "src/index.d.ts",
+  "types": "src/@types/index.d.ts",
   "files": [
     "src",
     "@types"
