@@ -21,7 +21,7 @@
   "author": "",
   "license": "AGPL-3.0",
   "dependencies": {
-    "@imgly/background-removal": "^1.5.5"
+    "@imgly/background-removal": "^1.5.7"
   },
   "devDependencies": {
     "webpack": "^5.0.0",
